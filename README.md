@@ -1,7 +1,10 @@
 # SmolLM2
 SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device.
 
-**New: Introducing [Smol-tools](#smol-tools).** 
+**New: Introducing [Smol-tools](#smol-tools) 🚀** 
+
+<img src="https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/y45hIMNREW7w_XpHYB_0q.png" alt="Evaluation Results" width="600">
+
 ## Table of Contents
 1. [Usage](#usage)
     - [Transformers](#transformers)
