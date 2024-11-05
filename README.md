@@ -54,8 +54,7 @@ All models are available in this [collection](https://huggingface.co/collections
 
 ## Smol-tools
 A collection of lightweight AI-powered tools built with LLaMA.cpp and small language models. These tools are designed to run locally on your machine without requiring expensive GPU resources.
-
-TODO Andi
+Further instructions on how to use the tools can be found in the [smol-tools README](smol_tools/README.md).
 
 ## Fine-tuning
 You can find an example script to finetune SmolLM2 using `TRL` and `PEFT` in the `finetune` folder.
