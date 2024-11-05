@@ -9,6 +9,7 @@ SmolLM2 is a family of compact language models available in three size: 135M, 36
 1. [Usage](#usage)
     - [Transformers](#transformers)
     - [Chat in TRL](#chat-in-trl)
+    - [Local applications](#local-applications)
 2. [Smol-tools](#smol-tools)
 3. [Fine-tuning](#fine-tuning)
 4. [Evaluation](#evaluation)
@@ -47,13 +48,17 @@ trl chat --model_name_or_path HuggingFaceTB/SmolLM2-1.7B-Instruct --device cpu
 
 You can find more details on how to leverage the model for use cases such as text summarization, text rewriting and function calling in the model card: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct 
 
+### Local applications
+You can use the models locally with frameworks like `llama.cpp`, `MLX`, and `transformers.js`, which support SmolLM2. 
+All models are available in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9).
+
 ## Smol-tools
 A collection of lightweight AI-powered tools built with LLaMA.cpp and small language models. These tools are designed to run locally on your machine without requiring expensive GPU resources.
 
 TODO Andi
 
 ## Fine-tuning
-You can find an example script to finetune SmolLM2 using `TRL` and `PEFT` in `finetune` folder.
+You can find an example script to finetune SmolLM2 using `TRL` and `PEFT` in the `finetune` folder.
 
 ## Evaluation
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/T-cHJVA7FBaI0cgDApzEj.png)
