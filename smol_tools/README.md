@@ -1,13 +1,13 @@
 # smol-tools
 
-A collection of lightweight AI-powered tools built with LLaMA.cpp and small language models. These tools are designed to run locally on your machine without requiring expensive GPU resources.
+A collection of lightweight AI-powered tools built with LLaMA.cpp and small language models. These tools are designed to run locally on your machine without requiring expensive GPU resources. They can also run offline, without any internet connection.
 
 ## Features
 
 ### SmolSummarizer
-- Quick text summarization using a fine-tuned 1.7B parameter model
+- Quick text summarization using SmolLM2-1.7B Instruct
 - Maintains key points while providing concise summaries
-- Runs entirely locally
+- Able to reply to follow-up questions
 
 ### SmolRewriter
 - Rewrites text to be more professional and approachable
@@ -28,15 +28,32 @@ A collection of lightweight AI-powered tools built with LLaMA.cpp and small lang
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/andimarafioti/smol-tools.git
-cd smol-tools
+git clone https://github.com/huggingface/smollm.git
+cd smollm/smol_tools
 ```
 
 2. Install dependencies:
 
 ```bash
+uv venv --python 3.11
+source .venv/bin/activate
 uv pip install -r requirements.txt
 ```
+
+If you're on mac, and you don't have tkinter installed, you can install it with:
+
+```bash
+brew install python-tk@3.11
+```
+
+For linux, you can install it with:
+
+```bash
+sudo apt-get install python3-tk
+```
+
+On Windows, when you install python you need to check the option to also install the tkinter library.
+
 ## Usage
 
 ### GUI Demo
@@ -47,8 +64,10 @@ python demo_tkinter.py
 ```
 
 The demo provides a user-friendly interface with the following shortcuts:
-- `F9`: Summarize selected text
-- `F10` or `Ctrl+S`: Open SmolAgent interface
+- `F1`: Open SmolDraft interface
+- `F2`: Summarize selected text
+- `F5`: Open SmolChat interface
+- `F10`: Open SmolAgent interface
 
 ### Programmatic Usage
 
@@ -75,11 +94,9 @@ for response in agent.process("What's the weather in London?"):
 ## Models
 
 The tools use the following models:
-- SmolSummarizer: SmolLM2-1.7B Intermediate SFT v2 (summarization-optimized)
-- SmolRewriter: SmolLM2-1B Numina DPO Mix3
-- SmolAgent: SmolLM2-1.7B Intermediate SFT v2
+- SmolSummarizer: SmolLM2-1.7B Instruct
 
-All models are quantized to 16-bit floating-point (F16) for efficient CPU inference.
+All models are quantized to 16-bit floating-point (F16) for efficient inference. Training was done on BF16, but in our tests, this format provides slower inference on Mac M-series chips.
 
 ## License
 

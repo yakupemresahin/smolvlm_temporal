@@ -38,16 +38,15 @@ class TextPopupApp:
                 self.root.winfo_y(),
                 self.root.winfo_width()
             ),
+            "<F2>": self.generate_summary_from_selected_text,
             "<F5>": self.show_chat_window,
-            "<F2>": self.on_f9,
-            "<F10>": self.on_f10,
-            "<ctrl>+s": self.on_f10 
+            "<F10>": self.show_agent_input,
         })
         self.keyboard_listener.start()
         
         self.username = getpass.getuser()  # Get system username
 
-    def on_f9(self):
+    def generate_summary_from_selected_text(self):
         selected_text = self.get_selected_text()
         if selected_text:
             # Directly generate summary instead of showing confirmation popup
@@ -249,10 +248,6 @@ class TextPopupApp:
                 print(e)
 
         threading.Thread(target=process_question, daemon=True).start()
-
-    def on_f10(self):
-        # Show agent input window instead of copying text
-        self.show_agent_input()
 
     def get_selected_text(self):
         # Copy selected text to clipboard
