@@ -50,7 +50,7 @@ A collection of lightweight AI-powered tools built with LLaMA.cpp and small lang
 TODO Andi
 
 ## Fine-tuning
-You can find an example script to finetune SmolLM2 using `TRL` and `PEFT` in `finetuning` folder.
+You can find an example script to finetune SmolLM2 using `TRL` and `PEFT` in `finetune` folder.
 
 ## Evaluation
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/T-cHJVA7FBaI0cgDApzEj.png)
