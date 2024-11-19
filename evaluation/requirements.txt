@@ -1,0 +1,5 @@
+lighteval[accelerate,extended_tasks] @ git+https://github.com/huggingface/lighteval@db609f791fc790e940d247534c7632bcc58771f4
+vllm==0.6.3
+transformers==4.45.2
+fsspec>=2024.3.0
+more_itertools
