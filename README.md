@@ -63,4 +63,4 @@ You can find an example script to finetune SmolLM2 using `TRL` and `PEFT` in the
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/T-cHJVA7FBaI0cgDApzEj.png)
 
 You can find more detailed evaluation of each model size in the model cards in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9).
-We use [lighteval](https://github.com/huggingface/lighteval) for all our evaluations, more details coming soon.
+We use [lighteval](https://github.com/huggingface/lighteval) for all our evaluations, for more details refer to the [evaluation README](evaluation/README.md).
