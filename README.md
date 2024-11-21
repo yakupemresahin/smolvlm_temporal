@@ -13,6 +13,7 @@ SmolLM2 is a family of compact language models available in three size: 135M, 36
 2. [Smol-tools](#smol-tools)
 3. [Fine-tuning](#fine-tuning)
 4. [Evaluation](#evaluation)
+5. [Synthetic data pipelines](#synthetic-data-pipelines)
 
 ## Usage
 Our most powerful model is `SmolLM2-1.7B-Instruct`, which you can use as an assistant with `transformers`, `trl`, or using quantized versions with tools like `llama.cpp`, `MLX`, and `transformers.js`. For lighter applications, you can also use the smaller models `SmolLM2-360M` and`SmolLM2-135M`, which are suitable for on-device usage and can be integrated similarly.
@@ -64,3 +65,8 @@ You can find an example script to finetune SmolLM2 using `TRL` and `PEFT` in the
 
 You can find more detailed evaluation of each model size in the model cards in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9).
 We use [lighteval](https://github.com/huggingface/lighteval) for all our evaluations, for more details refer to the [evaluation README](evaluation/README.md).
+
+## Synthetic data pipelines
+You can check and execute the synthetic data pipelines created with [distilabel](https://github.com/argilla-io/distilabel) that were used for the generation of the post-training dataset for SmolLM2.
+
+For further instructions, please refer to [distilabel-pipelines README](distilabel_pipelines/README.md).
