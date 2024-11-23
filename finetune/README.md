@@ -1,5 +1,10 @@
-## Fine-tuning
+# Fine-tuning
 
+## SmolLM2 Instruct
+
+We build teh SmolLM2 Instruct family by finetuning SmolLM2 models on [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk) using the alignement handbook, you can find the instructions here: https://github.com/huggingface/alignment-handbook/tree/main/recipes/smollm2#instructions-to-train-smollm2-17b-instruct 
+
+## Custom script
 Here, we showcase how you can fine-tune SmolLM2 models.
 
 ### Setup
@@ -45,3 +50,5 @@ accelerate launch train.py \
 ```
 
 If you want to fine-tune on other text datasets, you need to change `dataset_text_field` argument to the name of the column containing the code/text you want to train on.
+
+
