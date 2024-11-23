@@ -1,7 +1,7 @@
 # SmolLM2
 SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device.
 
-**New: Introducing [Smol-tools](#smol-tools) 🚀** 
+**New: Introducing [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk) and [Synthetic data pipelines](#synthetic-data-pipelines), the SFT recipe for SmolLM2 🚀**
 
 <img src="https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/y45hIMNREW7w_XpHYB_0q.png" alt="Evaluation Results" width="600">
 
@@ -67,6 +67,9 @@ You can find more detailed evaluation of each model size in the model cards in t
 We use [lighteval](https://github.com/huggingface/lighteval) for all our evaluations, for more details refer to the [evaluation README](evaluation/README.md).
 
 ## Synthetic data pipelines
-You can check and execute the synthetic data pipelines created with [distilabel](https://github.com/argilla-io/distilabel) that were used for the generation of the post-training dataset for SmolLM2.
+We released [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk) the SFT dataset used for building SmolLM2 instruct models. It was created with [distilabel](https://github.com/argilla-io/distilabel) and you can check and execute the synthetic data pipelines in [distilabel_pipelines README](distilabel_pipelines/README.md)
 
-For further instructions, please refer to [distilabel-pipelines README](distilabel_pipelines/README.md).
+<div align="center">
+<img src="https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/JLTEbnsBQ_qY032mxFzgC.png" width="800"/>
+<p><em>Comparison of models finetuned on SmolTalk and Orca AgentInstruct 1M. For more details, refer to the <a href="https://huggingface.co/datasets/HuggingFaceTB/smoltalk" target="_blank">dataset card</a>.</em></p>
+</div>
