@@ -2,10 +2,10 @@
 
 ## SmolLM2 Instruct
 
-We build teh SmolLM2 Instruct family by finetuning SmolLM2 models on [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk) using the alignement handbook, you can find the instructions here: https://github.com/huggingface/alignment-handbook/tree/main/recipes/smollm2#instructions-to-train-smollm2-17b-instruct 
+We build the SmolLM2 Instruct family by finetuning the base 1.7B on [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk) and the base 360M and 135M models on [Smol-smoltalk](https://huggingface.co/datasets/HuggingFaceTB/smol-smoltalk) using `TRL` and the alignement handbook and then doing DPO on [UltraFeedBack](https://huggingface.co/datasets/openbmb/UltraFeedback). You can find the scipts and instructions for dohere: https://github.com/huggingface/alignment-handbook/tree/main/recipes/smollm2#instructions-to-train-smollm2-17b-instruct 
 
 ## Custom script
-Here, we showcase how you can fine-tune SmolLM2 models.
+Here, we provide a simple script for finetuning SmolLM2. In this case, we fine-tune the base 1.7B on python data.
 
 ### Setup
 
