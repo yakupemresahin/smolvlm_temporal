@@ -1,5 +1,7 @@
 # SmolLM2
-SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device.
+SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. 
+
+You can find our most capable model **🤏 SmolLM2-1.7B-Instruct** [here](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct).
 
 **New: Introducing [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk) and [Synthetic data pipelines](#synthetic-data-pipelines), the SFT recipe for SmolLM2 🚀**
 
