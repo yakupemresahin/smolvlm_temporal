@@ -3,7 +3,7 @@ SmolLM2 is a family of compact language models available in three size: 135M, 36
 
 You can find our most capable model **🤏 SmolLM2-1.7B-Instruct** [here](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct).
 
-**New: Introducing [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk) and [Synthetic data pipelines](#synthetic-data-pipelines), the SFT recipe for SmolLM2 🚀**
+**New: Introducing [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk), the SFT dataset of SmolLM2 🚀**
 
 <img src="https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/y45hIMNREW7w_XpHYB_0q.png" alt="Evaluation Results" width="600">
 
