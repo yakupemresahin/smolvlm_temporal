@@ -11,9 +11,10 @@ SmolLM2 is a family of compact language models available in three size: 135M, 36
     - [Chat in TRL](#chat-in-trl)
     - [Local applications](#local-applications)
 2. [Smol-tools](#smol-tools)
-3. [Fine-tuning](#fine-tuning)
-4. [Evaluation](#evaluation)
-5. [Synthetic data pipelines](#synthetic-data-pipelines)
+3. [Pre-training](#pre-training)
+4. [Fine-tuning](#fine-tuning)
+5. [Evaluation](#evaluation)
+6. [Synthetic data pipelines](#synthetic-data-pipelines)
 
 ## Usage
 Our most powerful model is `SmolLM2-1.7B-Instruct`, which you can use as an assistant with `transformers`, `trl`, or using quantized versions with tools like `llama.cpp`, `MLX`, and `transformers.js`. For lighter applications, you can also use the smaller models `SmolLM2-360M` and`SmolLM2-135M`, which are suitable for on-device usage and can be integrated similarly.
@@ -57,8 +58,11 @@ All models are available in this [collection](https://huggingface.co/collections
 A collection of lightweight AI-powered tools built with LLaMA.cpp and small language models. These tools are designed to run locally on your machine without requiring expensive GPU resources.
 Further instructions on how to use the tools can be found in the [smol-tools README](smol_tools/README.md).
 
+## Pre-training
+You can find scripts for launching pre-training with [nanotron](https://github.com/huggingface/nanotron/) under [pre-training](pre-training/README.md), we share the exact configs for training SmolLM1 and will upload SmolLM2's configs soon.
+
 ## Fine-tuning
-You can find an example script to finetune SmolLM2 using `TRL` and `PEFT` in the `finetune` folder.
+You can find an example script to finetune SmolLM2 using `TRL` and `PEFT` in the `finetuning` folder. We also link to our post-training scripts for SmolLM2 using the alignement handbook.
 
 ## Evaluation
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/T-cHJVA7FBaI0cgDApzEj.png)
