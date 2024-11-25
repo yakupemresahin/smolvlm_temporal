@@ -17,3 +17,11 @@ cd nanotron
 # follow installation
 CUDA_DEVICE_MAX_CONNECTIONS=1 torchrun --nproc_per_node=8 run_train.py --config-file smollm1/config_smollm1_135M.yaml
 ```
+
+If you are working on a slurm cluster, you can modify the `launch.slurm` and launch the training with:
+
+```bash
+sbatch launch.slurm
+```
+> [!NOTE]
+> Don't forget to create the logs directory before launching the job:
