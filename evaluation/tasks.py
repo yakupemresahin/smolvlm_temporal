@@ -1,9 +1,11 @@
 import re
+import numpy as np
 
 from lighteval.tasks.lighteval_task import LightevalTaskConfig
 from lighteval.tasks.requests import Doc
-from lighteval.metrics.metrics import Metrics
+from lighteval.metrics.metrics import Metrics, SampleLevelMetric, MetricCategory, MetricUseCase, ExactMatches
 import lighteval.tasks.default_prompts as prompt
+from .math_utils import math_normalizer
 
 
 def prompt_hellaswag(line, task_name: str = None):
@@ -48,7 +50,6 @@ def mmlu_pro_mc_prompt(line, task_name: str = None):
         choices=letters,
         gold_index=line["answer_index"],
         instruction=f"The following are multiple choice questions (with answers) about {topic}.\n\n",
-        target_for_fewshot_sorting=letters[line["answer_index"]],
     )
 
 def bbh_prompt(line, task_name: str = None):
@@ -57,6 +58,14 @@ def bbh_prompt(line, task_name: str = None):
         query="Question: " + line["input"] + "\nAnswer: ",
         choices=[line["target"]],
         gold_index=0,
+    )
+
+def prompt_math(line, task_name: str = None):
+    return Doc(
+        task_name=task_name,
+        query=f"Problem:\n{line['problem']}\n\nSolution:\n",
+        gold_index=0,
+        choices=[f"{line['solution']}\n"],
     )
 
 
@@ -139,7 +148,7 @@ TASKS_TABLE = [
         hf_avail_splits=["train", "validation"],
         evaluation_splits=["validation"],
         metric=[Metrics.quasi_exact_match_triviaqa],
-        generation_size=256,
+        generation_size=20,
         trust_dataset=True,
         stop_sequence=["Question:", "Question"],
         few_shots_select="random_sampling_from_train",
@@ -219,6 +228,47 @@ BBH_TASKS = [
 ]
 
 TASKS_TABLE.extend(BBH_TASKS)
+
+quasi_exact_match_math = SampleLevelMetric(
+        metric_name="qem",
+        sample_level_fn=ExactMatches(
+            strip_strings=True, normalize_pred=math_normalizer, normalize_gold=math_normalizer
+        ).compute,
+        category=MetricCategory.GENERATIVE,
+        use_case=MetricUseCase.MATH,
+        corpus_level_fn=np.mean,
+        higher_is_better=True,
+    )
+
+MATH_TASKS = [
+    LightevalTaskConfig(
+        name=f"math:{subset}",
+        prompt_function=prompt_math,
+        suite=["custom"],
+        hf_repo="HuggingFaceTB/MATH",
+        hf_subset=subset,
+        hf_revision="140a673f1f7182daf7923fdc7108e8cdbf97df46",
+        hf_avail_splits=["train", "test"],
+        evaluation_splits=["test"],
+        metric=[quasi_exact_match_math],
+        generation_size=1024,
+        stop_sequence=["Problem:"],
+        few_shots_split="fewshot",
+        few_shots_select="sequential",
+        trust_dataset=True,
+    )
+    for subset in [
+        "algebra",
+        "counting_and_probability",
+        "geometry",
+        "intermediate_algebra",
+        "number_theory",
+        "prealgebra",
+        "precalculus",
+    ]
+]
+
+TASKS_TABLE.extend(MATH_TASKS)
 
 
 if __name__ == "__main__":
