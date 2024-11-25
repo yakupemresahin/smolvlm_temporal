@@ -10,34 +10,33 @@ data_stages:
 - data:
     dataset:
       dataset_folder: # paths to tokenized datasets
-        datasets/fineweb-edu-dedup: 0.7
-        datasets/cosmopedia-v2: 0.15
-        datasets/python-edu: 0.08
-        datasets/open-web-math: 0.06
-        datasets/stackoverflow: 0.01
+        datasets/fineweb-edu-dedup
+        datasets/cosmopedia-v2
+        datasets/python-edu
+        datasets/open-web-math
+        datasets/stackoverflow
+      dataset_weights:
+        - 0.7
+        - 0.15
+        - 0.08
+        - 0.06
+        - 0.01
     num_loading_workers: 1
     seed: 42
   name: training stage
   start_training_step: 1
 general:
   benchmark_csv_path: null
-  config_logs_path: null
   consumed_train_samples: null
-  eval_slurm_config: null
-  evals_logs_path: null
   ignore_sanity_checks: true
-  launch_script_path: null
-  launch_slurm_config: null
-  logs_path: logs
   project: smollm
   run: smollm-360M
   seed: 8
-  slurm_logs_path: null
   step: null
-  temp_dir: temp
-  timestamp_with_run: null
-  wandb_id: null
-  wandb_project: null
+logging:
+  iteration_step_info_interval: 1
+  log_level: info
+  log_level_replica: info
 model:
   ddp_bucket_cap_mb: 25
   dtype: bfloat16
