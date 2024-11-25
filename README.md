@@ -11,7 +11,7 @@ You can find our most capable model **🤏 SmolLM2-1.7B-Instruct** [here](https:
 1. [Usage](#usage)
     - [Transformers](#transformers)
     - [Chat in TRL](#chat-in-trl)
-    - [Local applications](#local-applications)
+    - [Local inference](#local-inference)
 2. [Smol-tools](#smol-tools)
 3. [Pre-training](#pre-training)
 4. [Fine-tuning](#fine-tuning)
@@ -53,7 +53,7 @@ trl chat --model_name_or_path HuggingFaceTB/SmolLM2-1.7B-Instruct --device cpu
 You can find more details on how to leverage the model for use cases such as text summarization, text rewriting and function calling in the model card: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct 
 
 ### Local applications
-You can use the models locally with frameworks like `llama.cpp`, `MLX`, and `transformers.js`, which support SmolLM2. 
+You can use the models locally with frameworks like `llama.cpp`, `MLX`, and `transformers.js`. You can find the instructions to run SmolLM2 with these frameworks at [local-inference](local_inference/README.md).
 All models are available in this [collection](https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9).
 
 ## Smol-tools
