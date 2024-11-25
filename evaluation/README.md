@@ -35,3 +35,11 @@ lighteval accelerate \
   --model_args "pretrained=HuggingFaceTB/SmolLM2-1.7B-Instruct,revision=main,dtype=bfloat16,vllm,gpu_memory_utilisation=0.8,max_model_length=2048" \
   --custom_tasks "tasks.py" --tasks "smollm2_instruct.txt" --use_chat_template --output_dir "./evals" --save_details
 ```
+
+### MATH and other extra tasks
+
+```bash
+lighteval accelerate \
+  --model_args "pretrained=HuggingFaceTB/SmolLM2-1.7B-Instruct,revision=main,dtype=bfloat16,vllm,gpu_memory_utilisation=0.8,max_model_length=4096" \
+  --custom_tasks "tasks.py" --tasks "custom|math|4|1" --use_chat_template --output_dir "./evals" --save_details
+```
