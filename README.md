@@ -64,7 +64,7 @@ Further instructions on how to use the tools can be found in the [smol-tools REA
 You can find scripts for launching pre-training with [nanotron](https://github.com/huggingface/nanotron/) under [pre-training](pre-training/README.md), we share the exact configs for training SmolLM1 and will upload SmolLM2's configs soon.
 
 ## Fine-tuning
-You can find an example script to finetune SmolLM2 using `TRL` and `PEFT` in the `finetuning` folder. We also link to our post-training scripts for SmolLM2 using the alignement handbook.
+You can find an example script to finetune SmolLM2 using `TRL` and `PEFT` in the `finetuning` folder. We also link to our post-training scripts for SmolLM2 using the alignment handbook.
 
 ## Evaluation
 ![image/png](https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/T-cHJVA7FBaI0cgDApzEj.png)
