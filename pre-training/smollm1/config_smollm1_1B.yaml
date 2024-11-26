@@ -10,11 +10,11 @@ data_stages:
 - data:
     dataset:
       dataset_folder: # paths to tokenized datasets
-        datasets/fineweb-edu-dedup
-        datasets/cosmopedia-v2
-        datasets/open-web-math
-        datasets/starcoderdata-python
-        datasets/stackoverflow
+        - datasets/fineweb-edu-dedup
+        - datasets/cosmopedia-v2
+        - datasets/open-web-math
+        - datasets/starcoderdata-python
+        - datasets/stackoverflow
       dataset_weights:
         - 0.7
         - 0.15
@@ -28,12 +28,12 @@ data_stages:
 - data:
     dataset: # we change data mixture to use python-edu
       dataset_folder: 
-        datasets/fineweb-edu-dedup
-        datasets/cosmopedia-v2
-        datasets/open-web-math
-        datasets/python-edu
-        datasets/stackoverflow
-        datasets/deepmind_mathematics
+        - datasets/fineweb-edu-dedup
+        - datasets/cosmopedia-v2
+        - datasets/open-web-math
+        - datasets/python-edu
+        - datasets/stackoverflow
+        - datasets/deepmind_mathematics
       dataset_weights:
         - 0.7
         - 0.15
