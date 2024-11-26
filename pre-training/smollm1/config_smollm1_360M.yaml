@@ -10,11 +10,11 @@ data_stages:
 - data:
     dataset:
       dataset_folder: # paths to tokenized datasets
-        datasets/fineweb-edu-dedup
-        datasets/cosmopedia-v2
-        datasets/python-edu
-        datasets/open-web-math
-        datasets/stackoverflow
+        - datasets/fineweb-edu-dedup
+        - datasets/cosmopedia-v2
+        - datasets/python-edu
+        - datasets/open-web-math
+        - datasets/stackoverflow
       dataset_weights:
         - 0.7
         - 0.15
