@@ -3,16 +3,20 @@ SmolLM2 is a family of compact language models available in three size: 135M, 36
 
 You can find our most capable model **🤏 SmolLM2-1.7B-Instruct** [here](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct).
 
-**New: Introducing [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk), the SFT dataset of SmolLM2 🚀**
+**New: Introducing [SmolVLM](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct), a Vision Language Model using SmolLM2 as a language backbone 🚀**
 
-<img src="https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/y45hIMNREW7w_XpHYB_0q.png" alt="Evaluation Results" width="600">
+<div align="center">
+<img src="https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/RvHjdlRT5gGQt5mJuhXH9.png" width="600"/>
+</div>
+
+<!-- <img src="https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/y45hIMNREW7w_XpHYB_0q.png" alt="Evaluation Results" width="600"> -->
 
 ## Table of Contents
 1. [Usage](#usage)
     - [Transformers](#transformers)
     - [Chat in TRL](#chat-in-trl)
     - [Local inference](#local-inference)
-2. [Smol-tools](#smol-tools)
+    - [Smol-tools](#smol-tools)
 3. [Pre-training](#pre-training)
 4. [Fine-tuning](#fine-tuning)
 5. [Evaluation](#evaluation)
@@ -55,7 +59,7 @@ You can find more details on how to leverage the model for use cases such as tex
 ### Local inference
 You can use the models locally with frameworks like `llama.cpp`, `MLX`, `MLC` and `transformers.js`. You can find the instructions to run SmolLM2 with these frameworks at [local-inference](local_inference/README.md).
 
-## Smol-tools
+### Smol-tools
 A collection of lightweight AI-powered tools built with LLaMA.cpp and small language models. These tools are designed to run locally on your machine without requiring expensive GPU resources.
 Further instructions on how to use the tools can be found in the [smol-tools README](smol_tools/README.md).
 
