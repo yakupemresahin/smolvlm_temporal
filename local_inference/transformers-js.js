@@ -3,8 +3,8 @@ import { pipeline } from "@huggingface/transformers";
 // Create a text generation pipeline
 const generator = await pipeline(
   "text-generation",
-  "HuggingFaceTB/SmolLM2-135M-Instruct",
-  { dtype: "q4f16", revision:'refs/pr/6' },
+  "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  { dtype: "q4f16" },
 );
 
 // Define the list of messages
