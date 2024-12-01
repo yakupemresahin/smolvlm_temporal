@@ -23,7 +23,7 @@ general:
   project: smollm2
   run: smollm2-135M
   seed: 8
-  step: 2000000
+  step: null
 logging:
   iteration_step_info_interval: 1
   log_level: info
