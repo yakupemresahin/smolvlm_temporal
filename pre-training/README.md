@@ -1,7 +1,7 @@
 # Pre-training
 We use [nanotron](https://github.com/huggingface/nanotron/) library for training SmolLM and SmolLM2 base models.
 
-The scripts for training SmolLM v1 can be found in the `smollm1` folder. SmolLM2 has a similar architecture and setup but uses an improved data mixture that we curated and significantly longer training periods (11 trillion tokens for the 1.7B, 4 trillion for the 360M and 2 trillion for the 135M). We will upload the SmolLM2 configs soon.
+The scripts for training SmolLM v1 can be found in the `smollm1` folder, and those for training SmolLM2 can be found in the `smollm2` folder, we will add the details for the data mixture soon. SmolLM2 uses similar architecture as SmolLM but uses an improved data mixture and significantly longer training periods (11 trillion tokens for the 1.7B, 4 trillion for the 360M and 2 trillion for the 135M).
 
 ## Setup
 
@@ -30,4 +30,4 @@ sbatch launch.slurm
 
 The nanotron checkpoints for SmolLM2 models are available at: https://huggingface.co/HuggingFaceTB/SmolLM2-nanotron-ckpt 
 
-To resume the training without the optimizer states or lr schedule, use this branch: https://github.com/huggingface/nanotron/pull/253
+To resume the training without the optimizer states or lr schedule (recommended for data mixture changes), use this branch: https://github.com/huggingface/nanotron/pull/253
