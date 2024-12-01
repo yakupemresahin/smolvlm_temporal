@@ -13,13 +13,13 @@ Please first install each library by following its documentation:
 ## Demos
 Below are some demos we built for running SmolLM models on-device.
 
-### In-browser chat assistants:
+### In-browser chat assistants
 - [WebGPU chat demo](https://huggingface.co/spaces/HuggingFaceTB/SmolLM2-1.7B-Instruct-WebGPU) of SmolLM2 1.7B Instruct powered by Transformers.js and ONNX Runtime Web.
 - [Instant SmolLM](https://huggingface.co/spaces/HuggingFaceTB/instant-smollm) powered by MLC for real-time generations of SmolLM-360M-Instruct.
 
 The models are also available on [Ollama](https://ollama.com/library/smollm2) and [PocketPal-AI](https://github.com/a-ghorbani/pocketpal-ai).
 
-### Special use cases for smol models
+### Other use cases
 #### Text extraction 
 - [Github Issue Generator running locally w/ SmolLM2 & WebGPU](https://huggingface.co/spaces/reach-vb/github-issue-generator-webgpu) showcases how to use SmolLM2 1.7B for structured text extraction to convert complaints to structured GitHub issues. The demo leverages MLC WebLLM and [XGrammar](https://github.com/mlc-ai/xgrammar) for structured generation. You can define a JSON schema, input free text and get structured data in your browser.
 
