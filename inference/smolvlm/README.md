@@ -2,9 +2,14 @@
 <img src="https://huggingface.co/datasets/huggingface/documentation-images/resolve/main/SmolVLM.png" width="800" height="auto" alt="Image description">
 
 # SmolVLM
-
 SmolVLM is a compact open multimodal model that accepts arbitrary sequences of image and text inputs to produce text outputs. It uses SmolLM2-1.7B-Instruct as a language backbone and is designed for efficiency. SmolVLM can answer questions about images, describe visual content, create stories grounded on multiple images, or function as a pure language model without visual inputs. Its lightweight architecture makes it suitable for on-device applications while maintaining strong performance on multimodal tasks.
 More details in this blog post: https://huggingface.co/blog/smolvlm
+
+#  Table of Contents
+2. [Usage](#usage)
+3. [Inference with transformers](#inference-with-transformers)
+4. [Inference with mlx-vlm](#inference-with-mlx-vlm)
+5. [Video Inference](#video-inference)
 
 ## Usage
 
