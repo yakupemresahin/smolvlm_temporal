@@ -25,3 +25,9 @@ sbatch launch.slurm
 ```
 > [!NOTE]
 > Don't forget to create the logs directory before launching the job:
+
+## Continual pre-training
+
+The nanotron checkpoints for SmolLM2 models are available at: https://huggingface.co/HuggingFaceTB/SmolLM2-nanotron-ckpt 
+
+To resume the training without the optimizer states or lr schedule, use this branch: https://github.com/huggingface/nanotron/pull/253
