@@ -1,12 +1,14 @@
 # SmolLM2
-SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. 
+SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. You can find our most capable model **🤏 SmolLM2-1.7B-Instruct** [here](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct).
 
-You can find our most capable model **🤏 SmolLM2-1.7B-Instruct** [here](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct).
+**News 📰**
+- **Introducing [SmolVLM](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct), a Vision Language Model using SmolLM2 as a language backbone 🚀**
+- We added [local_inference](local_inference) for running SmolLM2 on-device with MLX, MLC, Transformers.js and llama.cpp
+- We released the nanotron checkpoints of SmolLM2 at [SmolLM2-nanotron-ckpt](https://huggingface.co/HuggingFaceTB/SmolLM2-nanotron-ckpt)
 
-**New: Introducing [SmolVLM](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct), a Vision Language Model using SmolLM2 as a language backbone 🚀**
 
 <div align="center">
-<img src="https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/RvHjdlRT5gGQt5mJuhXH9.png" width="600"/>
+<img src="https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/RvHjdlRT5gGQt5mJuhXH9.png" width="700"/>
 </div>
 
 <!-- <img src="https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/y45hIMNREW7w_XpHYB_0q.png" alt="Evaluation Results" width="600"> -->
