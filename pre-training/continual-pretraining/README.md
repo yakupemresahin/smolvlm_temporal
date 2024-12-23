@@ -34,4 +34,4 @@ Once the dataset are tokenized, you can launch the training with a similar scrip
 
 ### Evaluation
 
-For evaluation, you can follow the instructions in [smollm/evaluation/finemath](https://github.com/huggingface/smollm/tree/main/evaluation/finemath).
+For evaluation, you can follow the instructions in [smollm/evaluation](https://github.com/huggingface/smollm/tree/main/evaluation#finemath-dataset-ablations).
