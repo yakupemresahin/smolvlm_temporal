@@ -68,10 +68,10 @@ optimizer:
   clip_grad: 1.0
   learning_rate_scheduler:
     learning_rate: 0.003
-    lr_decay_starting_step: 250000
-    lr_decay_steps: 50000
+    lr_decay_starting_step: 500000
+    lr_decay_steps: 100000
     lr_decay_style: 1-sqrt
-    lr_warmup_steps: 2500
+    lr_warmup_steps: 5000
     lr_warmup_style: linear
     min_decay_lr: 0
   optimizer_factory:
