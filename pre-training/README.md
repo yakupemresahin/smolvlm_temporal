@@ -30,4 +30,4 @@ sbatch launch.slurm
 
 The nanotron checkpoints for SmolLM2 models are available at: https://huggingface.co/HuggingFaceTB/SmolLM2-nanotron-ckpt 
 
-To resume the training without the optimizer states or lr schedule (recommended for data mixture changes), use this branch: https://github.com/huggingface/nanotron/pull/253
+You can find an example of continual pre-training in the [continual-pretraining](https://github.com/huggingface/smollm/tree/main/continual-pretraining) folder.
