@@ -2,10 +2,8 @@
 SmolLM2 is a family of compact language models available in three size: 135M, 360M, and 1.7B parameters. They are capable of solving a wide range of tasks while being lightweight enough to run on-device. You can find our most capable model **🤏 SmolLM2-1.7B-Instruct** [here](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct).
 
 **News 📰**
-- **Introducing [SmolVLM](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct), a Vision Language Model using SmolLM2 as a language backbone 🚀**
-- We added [local_inference](local_inference) for running SmolLM2 on-device with MLX, MLC, Transformers.js and llama.cpp
-- We released the nanotron checkpoints of SmolLM2 at [SmolLM2-nanotron-ckpt](https://huggingface.co/HuggingFaceTB/SmolLM2-nanotron-ckpt)
-
+- **Introducing [FineMath](https://huggingface.co/datasets/HuggingFaceTB/finemath), the best public math pre-training dataset 🚀**
+- We added the code to do continual pre-training of Llama 3.2 3B on FineMath & FineWeb-Edu with `nanotron` at [pre-training/continual-pretraining](pre-training/continual-pretraining)
 
 <div align="center">
 <img src="https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/RvHjdlRT5gGQt5mJuhXH9.png" width="700"/>
@@ -20,9 +18,10 @@ SmolLM2 is a family of compact language models available in three size: 135M, 36
     - [Local inference](#local-inference)
     - [Smol-tools](#smol-tools)
 3. [Pre-training](#pre-training)
-4. [Fine-tuning](#fine-tuning)
-5. [Evaluation](#evaluation)
-6. [Synthetic data pipelines](#synthetic-data-pipelines)
+4. [SmolVLM](#smolvlm)
+5. [Fine-tuning](#fine-tuning)
+6. [Evaluation](#evaluation)
+7. [Synthetic data pipelines](#synthetic-data-pipelines)
 
 ## Usage
 Our most powerful model is `SmolLM2-1.7B-Instruct`, which you can use as an assistant with `transformers`, `trl`, or using quantized versions with tools like `llama.cpp`, `MLX`, and `transformers.js`. For lighter applications, you can also use the smaller models `SmolLM2-360M` and`SmolLM2-135M`, which are suitable for on-device usage and can be integrated similarly.
@@ -67,6 +66,11 @@ Further instructions on how to use the tools can be found in the [smol-tools REA
 
 ## Pre-training
 You can find scripts for launching pre-training with [nanotron](https://github.com/huggingface/nanotron/) under [pre-training](pre-training/README.md), we share the exact configs for training SmolLM1 and will upload SmolLM2's configs soon.
+
+### SmolVLM
+We released [SmolVLM](a compact open multimodal model that accepts arbitrary sequences of image and text inputs to produce text outputs. It uses SmolLM2-1.7B-Instruct as a language backbone and is designed for efficiency. SmolVLM can answer questions about images, describe visual content, create stories grounded on multiple images, or function as a pure language model without visual inputs. Its lightweight architecture makes it suitable for on-device applications while maintaining strong performance on multimodal tasks. More details in this blog post: https://huggingface.co/blog/smolvlm
+
+Check [inference/smolvlm](inference/smolvlm/README.md) for more details and [finetuning/Smol_VLM_FT.ipynb](https://github.com/huggingface/smollm/blob/147aeabd358fc07bdc1e0717f5918f8cd4583cf4/finetuning/Smol_VLM_FT.ipynb) for some finetuning code.
 
 ## Fine-tuning
 You can find an example script to finetune SmolLM2 using `TRL` and `PEFT` in the `finetuning` folder. We also link to our post-training scripts for SmolLM2 using the alignment handbook.
