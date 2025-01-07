@@ -12,6 +12,12 @@ The nanotron checkpoints for SmolLM2 models are available at: https://huggingfac
 ## Example: Finemath
 For finemath, we did continual pretraining of llama3-3B with different data mixtures. Here we will detail the steps to do the same.
 
+### Nanotron
+For this example, you need to switch to this [PR](https://github.com/huggingface/nanotron/pull/255)
+```
+gh pr checkout 255
+```
+
 ### Data
 First step is to tokenize the datasets. To do this, we use the [datatrove](https://github.com/huggingface/datatrove) library. We tokenized the following datasets with the llama3 tokenizer:
 - [HuggingFaceTB/smollm-corpus/fineweb-edu-dedup](https://huggingface.co/datasets/HuggingFaceTB/smollm-corpus/tree/main/fineweb-edu-dedup)
