@@ -17,7 +17,7 @@ In this section you can find everything related to the training of our Vision La
 
 SmolVLM can be used for inference on multimodal (image + text) tasks where the input comprises text queries along with one or more images. Text and images can be interleaved arbitrarily, enabling tasks like image captioning, visual question answering, and storytelling based on visual content. The model does not support image generation.
 
-To fine-tune SmolVLM on a specific task, you can follow this [fine-tuning tutorial](../../finetuning/Smol_VLM_FT.ipynb)
+To fine-tune SmolVLM on a specific task, you can follow this [fine-tuning tutorial](finetuning/Smol_VLM_FT.ipynb)
 
 ## Inference with transformers
 
@@ -87,5 +87,5 @@ python -m mlx_vlm.chat_ui --model mlx-community/SmolVLM-Instruct-8bit
 
 Given SmolVLM's long context and the possibility of tweaking the internal frame resizing of the model, we explored its suitability as an accessible option for basic video analysis tasks, particularly when computational resources are limited.
 
-In our evaluation of SmolVLM's video understanding capabilities, we implemented a straightforward video processing pipeline code in `SmolVLM_video_inference.py`, extracting up to 50 evenly sampled frames from each video while avoiding internal frame resizing. This simple approach yielded surprisingly competitive results on the CinePile benchmark, with a score of 27.14%, a performance that positions the model between InterVL2 (2B) and Video LlaVa (7B).
+In our evaluation of SmolVLM's video understanding capabilities, we implemented a straightforward video processing pipeline code in [SmolVLM_video_inference.py](../tools/smolvlm_local_inference/SmolVLM_video_inference.py), extracting up to 50 evenly sampled frames from each video while avoiding internal frame resizing. This simple approach yielded surprisingly competitive results on the CinePile benchmark, with a score of 27.14%, a performance that positions the model between InterVL2 (2B) and Video LlaVa (7B).
 
