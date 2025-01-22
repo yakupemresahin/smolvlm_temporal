@@ -1,4 +1,4 @@
-# Local inference
+# SmolLM local inference
 
 You can use SmolLM2 models locally with frameworks like Transformers.js, llama.cpp, MLX and MLC.
 
