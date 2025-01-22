@@ -16,8 +16,8 @@ In this section you can find everything related to the training of SmolLM2. This
     - [Chat in TRL](#chat-in-trl)
     - [Local inference](#local-inference)
     - [Smol-tools](#smol-tools)
-2. [Pre-training](#pre-training)
-3. [Fine-tuning](#fine-tuning)
+2. [Pretraining](#pretraining)
+3. [Finetuning](#finetuning)
 4. [Evaluation](#evaluation)
 5. [Data](#data)
 
