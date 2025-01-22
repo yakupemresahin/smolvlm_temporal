@@ -3,8 +3,8 @@
 Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance.
 
 **News 📰**
-- **Introducing [FineMath](https://huggingface.co/datasets/HuggingFaceTB/finemath), the best public math pre-training dataset 🚀**
-- Added continual pre-training code for Llama 3.2 3B on FineMath & FineWeb-Edu with `nanotron`
+- **Introducing [FineMath](https://huggingface.co/datasets/HuggingFaceTB/finemath), the best public math pretraining dataset 🚀**
+- Added continual pretraining code for Llama 3.2 3B on FineMath & FineWeb-Edu with `nanotron`
 
 ## 💬 SmolLM2 (Language Model)
 [SmolLM2](https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9) is our family of compact language models available in three sizes:
@@ -75,11 +75,11 @@ messages = [
 - [SmolVLM Documentation](vision/README.md)
 - [Local Inference Guide](tools/README.md)
 
-### Pre-trained Models
+### Pretrained Models
 - [SmolLM2 Models Collection](https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9)
 - [SmolVLM Model](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct)
 
 ### Datasets
 - [SmolTalk](https://huggingface.co/datasets/HuggingFaceTB/smoltalk) - Our instruction-tuning dataset
-- [FineMath](https://huggingface.co/datasets/HuggingFaceTB/finemath) - Mathematics pre-training dataset
-- [FineMath](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu) - Educational content pre-training dataset
+- [FineMath](https://huggingface.co/datasets/HuggingFaceTB/finemath) - Mathematics pretraining dataset
+- [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu) - Educational content pretraining dataset
