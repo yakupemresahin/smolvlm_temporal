@@ -89,3 +89,16 @@ Given SmolVLM's long context and the possibility of tweaking the internal frame 
 
 In our evaluation of SmolVLM's video understanding capabilities, we implemented a straightforward video processing pipeline code in [SmolVLM_video_inference.py](../tools/smolvlm_local_inference/SmolVLM_video_inference.py), extracting up to 50 evenly sampled frames from each video while avoiding internal frame resizing. This simple approach yielded surprisingly competitive results on the CinePile benchmark, with a score of 27.14%, a performance that positions the model between InterVL2 (2B) and Video LlaVa (7B).
 
+## Training codebase
+
+The training codebase is available in the [m4](m4) and [experiments](experiments) folders. This codebase is based on an internal codebase from HuggingFace which was in development since 2022. Some of the biggest contributores are:
+
+- [VictorSanh](https://github.com/VictorSanh)
+- [HugoLaurencon](https://github.com/HugoLaurencon)
+- [SaulLu](https://github.com/SaulLu)
+- [leot13](https://github.com/leot13)
+- [stas00](https://github.com/stas00)
+- [apsdehal](https://github.com/apsdehal)
+- [thomasw21](https://github.com/thomasw21)
+- [siddk](https://github.com/siddk)
+
