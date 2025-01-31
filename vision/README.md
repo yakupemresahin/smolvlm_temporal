@@ -91,7 +91,7 @@ In our evaluation of SmolVLM's video understanding capabilities, we implemented 
 
 ## Training codebase
 
-The training codebase is available in the [m4](m4) and [experiments](experiments) folders. This codebase is based on an internal codebase from HuggingFace which was in development since 2022. Some of the biggest contributores are:
+The training codebase is available in the [m4](m4) and [experiments](experiments) folders. This codebase is based on an internal codebase from HuggingFace which was in development since 2022. Some of the biggest contributors are:
 
 - [VictorSanh](https://github.com/VictorSanh)
 - [HugoLaurencon](https://github.com/HugoLaurencon)
