@@ -4,7 +4,7 @@
 
 SmolVLM can be used for inference on multimodal (image + text) tasks where the input comprises text queries along with one or more images. Text and images can be interleaved arbitrarily, enabling tasks like image captioning, visual question answering, and storytelling based on visual content. The model does not support image generation.
 
-To fine-tune SmolVLM on a specific task, you can follow this [fine-tuning tutorial](../../finetuning/Smol_VLM_FT.ipynb)
+To fine-tune SmolVLM on a specific task, you can follow this [fine-tuning tutorial](../../vision/finetuning/Smol_VLM_FT.ipynb)
 
 ## Inference with transformers
 
