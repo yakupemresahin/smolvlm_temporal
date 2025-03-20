@@ -11,18 +11,20 @@ from datasets import load_dataset
 from peft import AutoPeftModelForCausalLM, LoraConfig
 from transformers import (
     AutoModelForCausalLM,
+    AutoTokenizer,
     BitsAndBytesConfig,
     is_torch_npu_available,
     is_torch_xpu_available,
     logging,
     set_seed,
 )
-from trl import SFTTrainer
+from trl import SFTConfig, SFTTrainer
 
 
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model_id", type=str, default="HuggingFaceTB/SmolLM2-1.7B")
+    parser.add_argument("--tokenizer_id", type=str, default="")
     parser.add_argument("--dataset_name", type=str, default="bigcode/the-stack-smol")
     parser.add_argument("--subset", type=str, default="data/python")
     parser.add_argument("--split", type=str, default="train")
@@ -74,6 +76,7 @@ def main(args):
         device_map={"": PartialState().process_index},
         attention_dropout=args.attention_dropout,
     )
+    tokenizer = AutoTokenizer.from_pretrained(args.tokenizer_id or args.model_id)
 
     data = load_dataset(
         args.dataset_name,
@@ -86,9 +89,11 @@ def main(args):
     # setup the trainer
     trainer = SFTTrainer(
         model=model,
+        processing_class=tokenizer,
         train_dataset=data,
-        max_seq_length=args.max_seq_length,
-        args=transformers.TrainingArguments(
+        args=SFTConfig(
+            dataset_text_field=args.dataset_text_field,
+            max_seq_length=args.max_seq_length,
             per_device_train_batch_size=args.micro_batch_size,
             gradient_accumulation_steps=args.gradient_accumulation_steps,
             warmup_steps=args.warmup_steps,
@@ -106,7 +111,6 @@ def main(args):
             report_to="wandb",
         ),
         peft_config=lora_config,
-        dataset_text_field=args.dataset_text_field,
     )
 
     # launch
