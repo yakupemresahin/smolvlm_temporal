@@ -28,6 +28,7 @@ def get_args():
     parser.add_argument("--dataset_name", type=str, default="bigcode/the-stack-smol")
     parser.add_argument("--subset", type=str, default="data/python")
     parser.add_argument("--split", type=str, default="train")
+    parser.add_argument("--streaming", type=bool, default=False)
     parser.add_argument("--dataset_text_field", type=str, default="content")
 
     parser.add_argument("--max_seq_length", type=int, default=2048)
@@ -83,7 +84,8 @@ def main(args):
         data_dir=args.subset,
         split=args.split,
         token=token,
-        num_proc=args.num_proc if args.num_proc else multiprocessing.cpu_count(),
+        num_proc=args.num_proc if args.num_proc or args.streaming else multiprocessing.cpu_count(),
+        streaming=args.streaming,
     )
 
     # setup the trainer
