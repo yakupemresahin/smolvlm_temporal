@@ -132,7 +132,7 @@ def main(args):
         else:
             torch.cuda.empty_cache()
 
-        model = AutoPeftModelForCausalLM.from_pretrained(args.output_dir, device_map="auto", torch_dtype=torch.bfloat16)
+        model = AutoPeftModelForCausalLM.from_pretrained(os.path.join(args.output_dir, "final_checkpoint/"), device_map="auto", torch_dtype=torch.bfloat16)
         model = model.merge_and_unload()
 
         output_merged_dir = os.path.join(args.output_dir, "final_merged_checkpoint")
