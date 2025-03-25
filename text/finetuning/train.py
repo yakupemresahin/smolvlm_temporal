@@ -111,7 +111,7 @@ def main(args):
             run_name=f"train-{args.model_id.split('/')[-1]}",
             report_to="wandb",
             push_to_hub=args.push_to_hub,
-            push_to_hub_model_id=args.repo_id,
+            hub_model_id=args.repo_id,
         ),
         peft_config=lora_config,
     )
