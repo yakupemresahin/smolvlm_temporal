@@ -46,7 +46,6 @@ def get_args():
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--output_dir", type=str, default="finetune_smollm2_python")
     parser.add_argument("--num_proc", type=int, default=None)
-    parser.add_argument("--save_merged_model", type=bool, default=True)
     parser.add_argument("--push_to_hub", type=bool, default=True)
     parser.add_argument("--repo_id", type=str, default="SmolLM2-1.7B-finetune")
     return parser.parse_args()
@@ -111,6 +110,8 @@ def main(args):
             seed=args.seed,
             run_name=f"train-{args.model_id.split('/')[-1]}",
             report_to="wandb",
+            push_to_hub=args.push_to_hub,
+            push_to_hub_model_id=args.repo_id,
         ),
         peft_config=lora_config,
     )
@@ -118,29 +119,6 @@ def main(args):
     # launch
     print("Training...")
     trainer.train()
-
-    print("Saving the last checkpoint of the model")
-    model.save_pretrained(os.path.join(args.output_dir, "final_checkpoint/"))
-
-    if args.save_merged_model:
-        # Free memory for merging weights
-        del model
-        if is_torch_xpu_available():
-            torch.xpu.empty_cache()
-        elif is_torch_npu_available():
-            torch.npu.empty_cache()
-        else:
-            torch.cuda.empty_cache()
-
-        model = AutoPeftModelForCausalLM.from_pretrained(os.path.join(args.output_dir, "final_checkpoint/"), device_map="auto", torch_dtype=torch.bfloat16)
-        model = model.merge_and_unload()
-
-        output_merged_dir = os.path.join(args.output_dir, "final_merged_checkpoint")
-        model.save_pretrained(output_merged_dir, safe_serialization=True)
-
-        if args.push_to_hub:
-            model.push_to_hub(args.repo_id, "Upload model")
-    
     print("Training Done! 💥")
 
 
