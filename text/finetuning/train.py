@@ -94,6 +94,7 @@ def main(args):
         train_dataset=data,
         args=SFTConfig(
             dataset_text_field=args.dataset_text_field,
+            dataset_num_proc=args.num_proc,
             max_seq_length=args.max_seq_length,
             per_device_train_batch_size=args.micro_batch_size,
             gradient_accumulation_steps=args.gradient_accumulation_steps,
