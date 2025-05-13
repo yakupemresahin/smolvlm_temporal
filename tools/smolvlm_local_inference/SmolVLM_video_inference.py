@@ -36,17 +36,17 @@ class VideoFrameExtractor:
         
         return image.crop((left, top, right, bottom))
         
-    def extract_frames(self, video_path: str) -> List[Image.Image]:
+    def extract_frames(self, video_path: str, n_frames: int) -> List[Image.Image]:
         cap = cv2.VideoCapture(video_path)
         if not cap.isOpened():
             raise ValueError(f"Could not open video: {video_path}")
             
         # Get video properties
         total_frames = int(cap.get(cv2.CAP_PROP_FRAME_COUNT))
-        fps = int(cap.get(cv2.CAP_PROP_FPS))
+        #fps = int(cap.get(cv2.CAP_PROP_FPS))
         
         # Calculate frame indices to extract (1fps)
-        frame_indices = list(range(0, total_frames, fps))
+        frame_indices = np.linspace(0, total_frames - 1, n_frames, dtype=int).tolist()
         
         # If we have more frames than max_frames, sample evenly
         if len(frame_indices) > self.max_frames:
@@ -90,10 +90,10 @@ def load_model(checkpoint_path: str, base_model_id: str = "HuggingFaceTB/SmolVLM
     
     return model, processor
 
-def generate_response(model, processor, video_path: str, question: str, max_frames: int = 50):
+def generate_response(model, processor, video_path: str, question: str, max_frames: int = 50, n_frames: int = 5):
     # Extract frames
     frame_extractor = VideoFrameExtractor(max_frames)
-    frames = frame_extractor.extract_frames(video_path)
+    frames = frame_extractor.extract_frames(video_path, n_frames)
     logger.info(f"Extracted {len(frames)} frames from video")
     
     # Create prompt with frames
@@ -135,8 +135,15 @@ def main():
     #checkpoint_path = "/path/to/your/checkpoint"
     checkpoint_path = None
     base_model_id = "HuggingFaceTB/SmolVLM-Instruct"  
-    video_path = "/path/to/video.mp4"
-    question = "Describe the video"
+    video_name = "apple_falling"
+    video_path = f"/root/workspace/smolvlm/smolvlm_videos/{video_name}.mp4"
+
+    #question = "Is this video playing forwards or in reverse?"
+    question = "Describe the action."
+    question = "Describe the action and its likely direction."
+    #question = "What is the main object doing in terms of movement and physical behavior?"
+    
+    n_frames = 10
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     
@@ -146,7 +153,7 @@ def main():
     
     # Generate response
     logger.info("Generating response...")
-    response = generate_response(model, processor, video_path, question)
+    response = generate_response(model, processor, video_path, question, n_frames=n_frames)
     
     # Print results
     print("Question:", question)
