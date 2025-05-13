@@ -138,7 +138,7 @@ def main():
     checkpoint_path = None
     base_model_id = "HuggingFaceTB/SmolVLM-Instruct"  
     video_name = "glass_breaking_rev"  # Example video name
-    video_path = f"smolvlm_videos/{video_name}.mp4"
+    video_path = f"video_samples/{video_name}.mp4"
 
     question = "Is the action happening forward or backward in time?"
     #question = "Describe the action."
