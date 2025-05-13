@@ -48,6 +48,8 @@ class VideoFrameExtractor:
         # Calculate frame indices to extract (1fps)
         frame_indices = np.linspace(0, total_frames - 1, n_frames, dtype=int).tolist()
         
+        print(f"Extracting {frame_indices} frames from {total_frames} total frames.")
+        
         # If we have more frames than max_frames, sample evenly
         if len(frame_indices) > self.max_frames:
             indices = np.linspace(0, len(frame_indices) - 1, self.max_frames, dtype=int)
@@ -135,29 +137,30 @@ def main():
     #checkpoint_path = "/path/to/your/checkpoint"
     checkpoint_path = None
     base_model_id = "HuggingFaceTB/SmolVLM-Instruct"  
-    video_name = "apple_falling"
-    video_path = f"/root/workspace/smolvlm/smolvlm_videos/{video_name}.mp4"
+    video_name = "glass_breaking_rev"  # Example video name
+    video_path = f"smolvlm_videos/{video_name}.mp4"
 
-    #question = "Is this video playing forwards or in reverse?"
-    question = "Describe the action."
-    question = "Describe the action and its likely direction."
+    question = "Is the action happening forward or backward in time?"
+    #question = "Describe the action."
+    #question = "What is the action in the video?"
+    #question = "What is the action in the video? Tell me the change of the object."
     #question = "What is the main object doing in terms of movement and physical behavior?"
     
-    n_frames = 10
+    n_frames = 6
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     
     # Load model
-    logger.info("Loading model...")
+    #logger.info("Loading model...")
     model, processor = load_model(checkpoint_path, base_model_id, device)
     
     # Generate response
-    logger.info("Generating response...")
+    #logger.info("Generating response...")
     response = generate_response(model, processor, video_path, question, n_frames=n_frames)
     
     # Print results
-    print("Question:", question)
-    print("Response:", response)
+    print("Question:", question, "\n")
+    print("Response:", response, "\n\n")
 
 if __name__ == "__main__":
     main()
