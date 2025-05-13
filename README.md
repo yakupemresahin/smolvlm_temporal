@@ -1,74 +1,49 @@
-# Smol Models 🤏
+# Smol VLM Temporal Analysis 🤏
 
-Welcome to Smol Models, a family of efficient and lightweight AI models from Hugging Face. Our mission is to create powerful yet compact models, for text and vision, that can run effectively on-device while maintaining strong performance.
+This repository is focused on analyzing the temporal understanding capabilities of SmolVLM through short video sequences. We evaluate how well this compact vision-language model can comprehend and reason about time-based events in brief video clips (max 3 seconds). This repo is forked from [huggingface/smollm](https://github.com/huggingface/smollm).
 
-**News 📰**
-- **Introducing [FineMath](https://huggingface.co/datasets/HuggingFaceTB/finemath), the best public math pretraining dataset 🚀**
-- Added continual pretraining code for Llama 3.2 3B on FineMath & FineWeb-Edu with `nanotron`
 
-## 💬 SmolLM2 (Language Model)
-[SmolLM2](https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9) is our family of compact language models available in three sizes:
-- **SmolLM2-135M**: Ultra-lightweight model for basic text tasks
-- **SmolLM2-360M**: Balanced model for general use
-- **SmolLM2-1.7B**: Our most capable language model, available at **🤏 SmolLM2-1.7B-Instruct** [here](https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct).
+## Project Overview
+We probe SmolVLM, the Vision Language Model of SmolLM2 ecosystem, to understand its temporal reasoning abilities using two categories of actions:
 
-All models have instruction-tuned versions optimized for assistant-like interactions. Find them in our [SmolLM2 collection](https://huggingface.co/collections/HuggingFaceTB/smollm2-6723884218bcda64b34d7db9).
+**Reversible actions:** Events that can naturally occur in either direction (e.g., opening/closing a door, turning a light on/off)
 
-## 👁️ SmolVLM (Vision Language Model)
-[SmolVLM](https://huggingface.co/HuggingFaceTB/SmolVLM-Instruct) is our compact multimodal model that can:
-- Process both images and text and perform tasks like visual QA, image description, and visual storytelling
-- Handle multiple images in a single conversation
-- Run efficiently on-device
+**Irreversible actions:** Events with a natural progression that would appear unnatural when reversed (e.g., an apple falling from a tree, a wine glass shattering)
+
+
+This analysis helps us understand how well SmolVLM perceives temporal sequences. Whether it can distinguish between natural and unnatural event progressions and the limitations of compact VLMs in processing temporal information
 
 ## Repository Structure
 ```
 smollm/
-├── text/               # SmolLM2 related code and resources
+├── text/              # SmolLM2 related code and resources
 ├── vision/            # SmolVLM related code and resources
-└── tools/             # Shared utilities and inference tools
+└── tools/             # Shared utilities and inference 
     ├── smol_tools/    # Lightweight AI-powered tools
     ├── smollm_local_inference/
-    └── smolvlm_local_inference/
+    ├── smolvlm_local_inference/   # ← Our temporal analysis code is here
+        ├── video_samples/         # Directory for test videos
+        └── temporal_analysis.py/  # Main script for temporal understanding tests
 ```
 
 ## Getting Started
 
-### SmolLM2
-```python
-from transformers import AutoModelForCausalLM, AutoTokenizer
+1. Install the required dependencies:<br>
+    ```pip install -r tools/smolvlm_local_inference/requirements.txt```
 
-checkpoint = "HuggingFaceTB/SmolLM2-1.7B-Instruct"
-tokenizer = AutoTokenizer.from_pretrained(checkpoint)
-model = AutoModelForCausalLM.from_pretrained(checkpoint)
+2. Prepare your test videos:
+    - Place your video clipsunder ```tools/smolvlm_local_inference/video_samples/```
+    - Videos should be in ```.mp4``` format
 
-messages = [{"role": "user", "content": "Write a 100-word article on 'Benefits of Open-Source in AI research"}]
-input_text = tokenizer.apply_chat_template(messages, tokenize=False)
-```
+3. Run the analysis script:<br>
+    ```cd tools/smolvlm_local_inference``` <br>```python temporal_analysis.py```
 
-### SmolVLM
-```python
-from transformers import AutoProcessor, AutoModelForVision2Seq
-
-processor = AutoProcessor.from_pretrained("HuggingFaceTB/SmolVLM-Instruct")
-model = AutoModelForVision2Seq.from_pretrained("HuggingFaceTB/SmolVLM-Instruct")
-
-messages = [
-    {
-        "role": "user",
-        "content": [
-            {"type": "image"},
-            {"type": "text", "text": "What's in this image?"}
-        ]
-    }
-]
-```
-
-## Ecosystem
-<div align="center">
-<img src="https://cdn-uploads.huggingface.co/production/uploads/61c141342aac764ce1654e43/RvHjdlRT5gGQt5mJuhXH9.png" width="700"/>
-</div>
+4. The outputs are saved in ```results.json```
 
 ## Resources
+
+### Source
+- [Original smollm Repo](https://github.com/huggingface/smollm)
 
 ### Documentation
 - [SmolLM2 Documentation](text/README.md)
