@@ -132,6 +132,9 @@ def generate_response(model, processor, video_path: str, question: str, max_fram
     
     # Decode response
     response = processor.decode(outputs[0], skip_special_tokens=True)
+    
+    response = response.split("Assistant: ")[-1]
+    
     return response
 
 def ask_question(video_name: str, question: str, fps: int = 2):
