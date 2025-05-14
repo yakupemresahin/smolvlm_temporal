@@ -1,0 +1,98 @@
+[
+    {
+        "video_name": "apple_falling",
+        "fps": 3,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The action in the video is a tree dropping an apple."
+    },
+    {
+        "video_name": "apple_falling",
+        "fps": 8,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The action in the video is an apple falling from a tree."
+    },
+    {
+        "video_name": "apple_falling_rev",
+        "fps": 3,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: Pixel art."
+    },
+    {
+        "video_name": "apple_falling_rev",
+        "fps": 8,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: An apple is falling from a tree."
+    },
+    {
+        "video_name": "door_closing",
+        "fps": 3,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The action in the video is opening a door."
+    },
+    {
+        "video_name": "door_closing",
+        "fps": 8,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The action in the video is opening the door."
+    },
+    {
+        "video_name": "door_closing_rev",
+        "fps": 3,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The action in the video is the door opening."
+    },
+    {
+        "video_name": "door_closing_rev",
+        "fps": 8,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The action in the video is the door opening."
+    },
+    {
+        "video_name": "door_opening",
+        "fps": 3,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The action in the video is a girl opening a door."
+    },
+    {
+        "video_name": "door_opening",
+        "fps": 8,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The action in the video is a girl opening a door."
+    },
+    {
+        "video_name": "door_opening_rev",
+        "fps": 3,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The girl is opening the door."
+    },
+    {
+        "video_name": "door_opening_rev",
+        "fps": 8,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The girl is opening the door."
+    },
+    {
+        "video_name": "glass_breaking",
+        "fps": 3,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The action in the video is a broken wine glass."
+    },
+    {
+        "video_name": "glass_breaking",
+        "fps": 8,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The action in the video is breaking a glass."
+    },
+    {
+        "video_name": "glass_breaking_rev",
+        "fps": 3,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The action in the video is the breaking of a glass."
+    },
+    {
+        "video_name": "glass_breaking_rev",
+        "fps": 8,
+        "question": "What is the action in the video?",
+        "response": "User: Answer briefly.<image>What is the action in the video?\nAssistant: The action in the video is the breaking of a glass."
+    }
+]

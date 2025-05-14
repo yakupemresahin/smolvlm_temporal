@@ -1,0 +1,194 @@
+[
+    {
+        "video_name": "apple_falling",
+        "fps": 2,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is a person riding a bicycle."
+    },
+    {
+        "video_name": "apple_falling",
+        "fps": 5,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: There is no video clip present in the image."
+    },
+    {
+        "video_name": "apple_falling",
+        "fps": 2,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: Yes."
+    },
+    {
+        "video_name": "apple_falling",
+        "fps": 5,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: Yes."
+    },
+    {
+        "video_name": "apple_falling_rev",
+        "fps": 2,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is a person riding a bicycle."
+    },
+    {
+        "video_name": "apple_falling_rev",
+        "fps": 5,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is the tree falling."
+    },
+    {
+        "video_name": "apple_falling_rev",
+        "fps": 2,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: Yes."
+    },
+    {
+        "video_name": "apple_falling_rev",
+        "fps": 5,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: Yes."
+    },
+    {
+        "video_name": "door_closing",
+        "fps": 2,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is the opening of a large wooden door."
+    },
+    {
+        "video_name": "door_closing",
+        "fps": 5,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is the opening of a large wooden door."
+    },
+    {
+        "video_name": "door_closing",
+        "fps": 2,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: Yes. The action in the video follows the laws of physics and natural temporal flow because it is a still image, and there is no indication of movement or time passing."
+    },
+    {
+        "video_name": "door_closing",
+        "fps": 5,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: No, the action in the video does not follow the laws of physics and natural temporal flow."
+    },
+    {
+        "video_name": "door_closing_rev",
+        "fps": 2,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is the opening of a door."
+    },
+    {
+        "video_name": "door_closing_rev",
+        "fps": 5,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is the opening of a door."
+    },
+    {
+        "video_name": "door_closing_rev",
+        "fps": 2,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: No, the action in the video does not follow the laws of physics and natural temporal flow."
+    },
+    {
+        "video_name": "door_closing_rev",
+        "fps": 5,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: Yes. The action in the video follows the laws of physics and natural temporal flow because it is a realistic depiction of a door being opened, which is a common occurrence in everyday life."
+    },
+    {
+        "video_name": "door_opening",
+        "fps": 2,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is a girl opening a door."
+    },
+    {
+        "video_name": "door_opening",
+        "fps": 5,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is a girl opening a door."
+    },
+    {
+        "video_name": "door_opening",
+        "fps": 2,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: Yes. The action in the video follows the laws of physics and natural temporal flow because the girl is opening a door, which is a common and observable action in everyday life."
+    },
+    {
+        "video_name": "door_opening",
+        "fps": 5,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: Yes. The action in the video follows the laws of physics and natural temporal flow because the girl is opening a door, which is a common and observable action in real life."
+    },
+    {
+        "video_name": "door_opening_rev",
+        "fps": 2,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is a girl opening a door."
+    },
+    {
+        "video_name": "door_opening_rev",
+        "fps": 5,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is the girl opening a door."
+    },
+    {
+        "video_name": "door_opening_rev",
+        "fps": 2,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: Yes. The action in the video follows the laws of physics and natural temporal flow because it depicts a realistic depiction of a person opening a door, which is a common and observable action in everyday life."
+    },
+    {
+        "video_name": "door_opening_rev",
+        "fps": 5,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: Yes. The action of the girl opening the door follows the laws of physics and natural temporal flow because it is a common action that people perform in real life, and it is depicted in a realistic and logical manner within the context of the image."
+    },
+    {
+        "video_name": "glass_breaking",
+        "fps": 2,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is the breaking of a glass."
+    },
+    {
+        "video_name": "glass_breaking",
+        "fps": 5,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is the breaking of a glass."
+    },
+    {
+        "video_name": "glass_breaking",
+        "fps": 2,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: No, the action in the video does not follow the laws of physics and natural temporal flow because it is an animated image and not a real-life event."
+    },
+    {
+        "video_name": "glass_breaking",
+        "fps": 5,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: No, the action in the video does not follow the laws of physics and natural temporal flow because it is an animated image and not a real-life event."
+    },
+    {
+        "video_name": "glass_breaking_rev",
+        "fps": 2,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is the breaking of a glass."
+    },
+    {
+        "video_name": "glass_breaking_rev",
+        "fps": 5,
+        "question": "What is the primary action depicted in the video clip?",
+        "response": "User: Answer briefly.<image>What is the primary action depicted in the video clip?\nAssistant: The primary action depicted in the video clip is the breaking of a glass."
+    },
+    {
+        "video_name": "glass_breaking_rev",
+        "fps": 2,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: No, the action in the video does not follow the laws of physics and natural temporal flow because it is an animated image and not a real-life event."
+    },
+    {
+        "video_name": "glass_breaking_rev",
+        "fps": 5,
+        "question": "Does the action in the video follow the laws of physics and natural temporal flow? Why?",
+        "response": "User: Answer briefly.<image>Does the action in the video follow the laws of physics and natural temporal flow? Why?\nAssistant: No."
+    }
+]

@@ -36,7 +36,7 @@ class VideoFrameExtractor:
         
         return image.crop((left, top, right, bottom))
         
-    def extract_frames(self, video_path: str, n_frames: int) -> List[Image.Image]:
+    def extract_frames(self, video_path: str, fps: int, n_frames: int = None) -> List[Image.Image]:
         cap = cv2.VideoCapture(video_path)
         if not cap.isOpened():
             raise ValueError(f"Could not open video: {video_path}")
@@ -46,7 +46,9 @@ class VideoFrameExtractor:
         #fps = int(cap.get(cv2.CAP_PROP_FPS))
         
         # Calculate frame indices to extract (1fps)
-        frame_indices = np.linspace(0, total_frames - 1, n_frames, dtype=int).tolist()
+        frame_indices = list(range(0, total_frames, fps))
+        if n_frames is not None:
+            frame_indices = np.linspace(0, total_frames - 1, n_frames, dtype=int).tolist()
         
         print(f"Extracting {frame_indices} frames from {total_frames} total frames.")
         
@@ -92,10 +94,10 @@ def load_model(checkpoint_path: str, base_model_id: str = "HuggingFaceTB/SmolVLM
     
     return model, processor
 
-def generate_response(model, processor, video_path: str, question: str, max_frames: int = 50, n_frames: int = 5):
+def generate_response(model, processor, video_path: str, question: str, max_frames: int = 50, fps: int = 5, n_frames: int = None):
     # Extract frames
     frame_extractor = VideoFrameExtractor(max_frames)
-    frames = frame_extractor.extract_frames(video_path, n_frames)
+    frames = frame_extractor.extract_frames(video_path, fps=fps, n_frames=n_frames)
     logger.info(f"Extracted {len(frames)} frames from video")
     
     # Create prompt with frames
@@ -132,21 +134,13 @@ def generate_response(model, processor, video_path: str, question: str, max_fram
     response = processor.decode(outputs[0], skip_special_tokens=True)
     return response
 
-def main():
+def ask_question(video_name: str, question: str, fps: int = 2):
+    
     # Configuration
     #checkpoint_path = "/path/to/your/checkpoint"
     checkpoint_path = None
     base_model_id = "HuggingFaceTB/SmolVLM-Instruct"  
-    video_name = "glass_breaking_rev"  # Example video name
     video_path = f"video_samples/{video_name}.mp4"
-
-    question = "Is the action happening forward or backward in time?"
-    #question = "Describe the action."
-    #question = "What is the action in the video?"
-    #question = "What is the action in the video? Tell me the change of the object."
-    #question = "What is the main object doing in terms of movement and physical behavior?"
-    
-    n_frames = 6
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     
@@ -156,7 +150,39 @@ def main():
     
     # Generate response
     #logger.info("Generating response...")
-    response = generate_response(model, processor, video_path, question, n_frames=n_frames)
+    response = generate_response(model, processor, video_path, question, fps=fps)
+    
+    output = {
+        "video_name": video_name,
+        "fps": fps,
+        "question": question,
+        "response": response
+    }
+    
+    return output
+
+def main():
+    # Configuration
+    #checkpoint_path = "/path/to/your/checkpoint"
+    checkpoint_path = None
+    base_model_id = "HuggingFaceTB/SmolVLM-Instruct"  
+    video_name = "glass_breaking_rev"  # Example video name
+    video_path = f"video_samples/{video_name}.mp4"
+
+    question = "What is happening in the scene in terms of physical movement or change?"
+    #question = "Is the sequence of events physically realistic and temporally consistent?"
+    
+    fps = 2
+
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    
+    # Load model
+    #logger.info("Loading model...")
+    model, processor = load_model(checkpoint_path, base_model_id, device)
+    
+    # Generate response
+    #logger.info("Generating response...")
+    response = generate_response(model, processor, video_path, question, fps=fps)
     
     # Print results
     print("Question:", question, "\n")

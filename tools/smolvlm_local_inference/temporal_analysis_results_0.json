@@ -1,0 +1,194 @@
+[
+    {
+        "video_name": "apple_falling",
+        "fps": 2,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The main event or activity occurring in the video is a person playing a video game, specifically a first-person shooter (FPS) game. The person is in a first-person perspective, which allows the player to see and interact with the environment from the character's point of view.\n\nThe game is set in a post-apocalyptic world, where the player is tasked with surviving in a hostile environment. The player is given a weapon, which they use to engage in combat with"
+    },
+    {
+        "video_name": "apple_falling",
+        "fps": 5,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The main event or activity occurring in the video is a person playing a video game. The video game appears to be a first-person shooter (FPS) game, as indicated by the player's perspective and the presence of a gun. The player is engaged in combat with an enemy, as evidenced by the presence of an enemy character and the player's use of a gun to shoot at the enemy.\n\nThe video game appears to be set in a post-apocalyptic or dystopian environment"
+    },
+    {
+        "video_name": "apple_falling",
+        "fps": 2,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No, the sequence of events is not physically realistic and temporally consistent because it is pixel art, which is a digital art style that uses small, square pixels to create images. Pixel art is often used in video games and other digital art forms, but it is not a realistic representation of real-world objects and events."
+    },
+    {
+        "video_name": "apple_falling",
+        "fps": 5,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No, the sequence of events is not physically realistic and temporally consistent because it is a pixel art image and not a real-life scenario."
+    },
+    {
+        "video_name": "apple_falling_rev",
+        "fps": 2,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The main event or activity occurring in the video is a person playing a video game, specifically a first-person shooter (FPS) game. The game is set in a post-apocalyptic world, where the player is tasked with surviving in a hostile environment. The player is equipped with a variety of weapons, including a sniper rifle, a pistol, and a shotgun, which they use to engage in combat with various enemies, including zombies, robots, and other hostile creatures."
+    },
+    {
+        "video_name": "apple_falling_rev",
+        "fps": 5,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The main event or activity occurring in the video is a person playing a video game. The video game appears to be a first-person shooter (FPS) game, as indicated by the player's perspective and the presence of a gun. The player is engaged in combat with an enemy, as evidenced by the presence of an enemy character and the player's use of a gun to shoot at the enemy.\n\nThe video game is set in a post-apocalyptic environment, as suggested by"
+    },
+    {
+        "video_name": "apple_falling_rev",
+        "fps": 2,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No."
+    },
+    {
+        "video_name": "apple_falling_rev",
+        "fps": 5,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No, the sequence of events is not physically realistic and temporally consistent because it is a pixel art image and not a real-life scenario. Pixel art is a type of digital art that uses small, square pixels to create images. It is often used in video games, websites, and other digital media. Pixel art is not physically realistic, as it is not a real-life scenario. Pixel art is not temporally consistent, as it is not a real-life scenario."
+    },
+    {
+        "video_name": "door_closing",
+        "fps": 2,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The image depicts a large, intricately designed wooden door. The door is arched at the top and has a rectangular shape. It is adorned with numerous metal bolts and studs, giving it a rugged and imposing appearance. The door appears to be made of wood and has a dark brown color. The bolts and studs are arranged symmetrically around the door, adding a sense of strength and security to the structure.\n\nThe door is set in a stone wall that is painted in a"
+    },
+    {
+        "video_name": "door_closing",
+        "fps": 5,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The image depicts a large, intricately designed wooden door that is slightly ajar. The door is positioned in what appears to be a corridor or a grand entranceway. The door is made of thick, sturdy wood, and its surface is adorned with numerous rivets or bolts, giving it a rugged and imposing appearance. The rivets or bolts are arranged in a symmetrical pattern, adding to the door's overall strength and security.\n\nThe door is framed by walls that are painted in a light"
+    },
+    {
+        "video_name": "door_closing",
+        "fps": 2,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: Yes, the sequence of events is physically realistic and temporally consistent because it depicts a real-life scenario involving a large wooden door in a setting that resembles a medieval castle or fortress, which is consistent with the theme of the image."
+    },
+    {
+        "video_name": "door_closing",
+        "fps": 5,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No, the sequence of events is not physically realistic and temporally consistent because it is a still image and does not depict a sequence of actions or events."
+    },
+    {
+        "video_name": "door_closing_rev",
+        "fps": 2,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The image depicts a large, intricately designed wooden door that is open. The door appears to be made from a single piece of wood, with multiple layers of metal bands and rivets adorning its surface. The bands and rivets are arranged symmetrically, giving the door a bold and imposing appearance. The door has a rectangular shape, with a slightly arched top and a flat bottom. The door is supported by two vertical metal bars that run from the top of the door to the"
+    },
+    {
+        "video_name": "door_closing_rev",
+        "fps": 5,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The image depicts a large, intricately designed wooden door that dominates the center of the frame. The door appears to be made of a rich, dark wood, possibly mahogany or a similar dark-toned wood, and is adorned with numerous metal studs or rivets. These studs or rivets are arranged symmetrically around the door, giving it a rugged and imposing appearance.\n\nThe door is secured by a large metal lock, which is positioned at the center of the"
+    },
+    {
+        "video_name": "door_closing_rev",
+        "fps": 2,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: Yes."
+    },
+    {
+        "video_name": "door_closing_rev",
+        "fps": 5,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No, the sequence of events is not physically realistic and temporally inconsistent. In the image, there is a door that is open and a door that is closed, but the door that is open is closed and the door that is closed is open. Additionally, there is a door that is open and a door that is closed, but the door that is open is closed and the door that is closed is open."
+    },
+    {
+        "video_name": "door_opening",
+        "fps": 2,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The image depicts an anime-style illustration of a young girl standing in a hallway. The girl is wearing a pink hoodie with a brown rabbit printed on the front. The hoodie has a hood and long sleeves. The girl's hair is short and reddish-brown, and she has a neutral expression on her face. She is standing in front of a door, which she is opening with her right hand. The door is made of wood and has a brown handle. The background of the"
+    },
+    {
+        "video_name": "door_opening",
+        "fps": 5,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The image depicts an anime-style illustration of a girl standing in a hallway. The girl appears to be in her late teens or early twenties, with shoulder-length reddish-brown hair. She is wearing a pink hoodie with a brown rabbit design on the front. The hoodie has a hood and long sleeves. She is also wearing black pants and black shoes.\n\nThe girl is standing in front of a door. The door is made of wood and painted in a light brown"
+    },
+    {
+        "video_name": "door_opening",
+        "fps": 2,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: Yes, the sequence of events is physically realistic and temporally consistent. The girl is shown opening a door, which is a common action in everyday life. The door is described as having a handle, which is a typical feature of doors. The girl is wearing a hoodie with a rabbit design, which is a common fashion item. The setting is a hallway, which is a typical part of a residential or commercial building. The image is drawn in a realistic style, and the girl is depicted"
+    },
+    {
+        "video_name": "door_opening",
+        "fps": 5,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No, the sequence of events is not physically realistic and temporally inconsistent. In the image, a girl is standing in front of a door wearing a hoodie with a rabbit on it, and she is opening the door. In reality, the girl would not be standing in front of a door while wearing a hoodie with a rabbit on it, and she would not be opening a door while wearing a hoodie with a rabbit on it."
+    },
+    {
+        "video_name": "door_opening_rev",
+        "fps": 2,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The image depicts an anime-style illustration of a girl standing in front of a door. The girl, who appears to be in her late teens or early twenties, is dressed in a hoodie with a rabbit design on the front. The hoodie is predominantly pink and brown, with the rabbit design being the focal point. The girl's hair is short and reddish-brown, and she has a neutral expression on her face.\n\nThe door she is standing in front of is made of"
+    },
+    {
+        "video_name": "door_opening_rev",
+        "fps": 5,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The image depicts an anime-style illustration of a girl standing in a hallway. The girl is wearing a hoodie with a rabbit design on the front. The hoodie is pink and brown, and the rabbit design is dark brown. The girl has short brown hair and is wearing black pants. She is standing in front of a door. The door is made of wood and has a metal handle. The door is open, and the inside of the hallway is visible. The hallway is"
+    },
+    {
+        "video_name": "door_opening_rev",
+        "fps": 2,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No, the sequence of events is not physically realistic and temporally consistent because it is an animated image, not a real-life scenario."
+    },
+    {
+        "video_name": "door_opening_rev",
+        "fps": 5,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No."
+    },
+    {
+        "video_name": "glass_breaking",
+        "fps": 2,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The main event in the video is a shattered martini glass. The martini glass is shown in a shattered state, with pieces of glass scattered around it. The glass is depicted in a neon-like color scheme, with blue and green hues. The background is black, which makes the neon colors of the glass stand out. The martini glass is positioned in the center of the frame, with the pieces of glass scattered around it."
+    },
+    {
+        "video_name": "glass_breaking",
+        "fps": 5,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The main event in the video is the depiction of a broken wine glass against a black background. The glass appears to be shattered into multiple pieces, with the pieces scattered around the central stem of the glass. The glass is depicted in a neon-like color scheme, with shades of blue, green, and purple. The glass is positioned in the center of the frame, with the pieces scattered around it. The background is completely black, which makes the neon colors of the glass stand out.\n\n"
+    },
+    {
+        "video_name": "glass_breaking",
+        "fps": 2,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No."
+    },
+    {
+        "video_name": "glass_breaking",
+        "fps": 5,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No."
+    },
+    {
+        "video_name": "glass_breaking_rev",
+        "fps": 2,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The main event or activity occurring in the video is the breaking of a glass, specifically a martini glass, into multiple pieces."
+    },
+    {
+        "video_name": "glass_breaking_rev",
+        "fps": 5,
+        "question": "Describe the main event or activity occurring in the video.",
+        "response": "User: Answer briefly.<image>Describe the main event or activity occurring in the video.\nAssistant: The main event or activity occurring in the video is the breaking of a glass, specifically a martini glass, into multiple pieces."
+    },
+    {
+        "video_name": "glass_breaking_rev",
+        "fps": 2,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No."
+    },
+    {
+        "video_name": "glass_breaking_rev",
+        "fps": 5,
+        "question": "Is the sequence of events physically realistic and temporally consistent? Why?",
+        "response": "User: Answer briefly.<image>Is the sequence of events physically realistic and temporally consistent? Why?\nAssistant: No."
+    }
+]

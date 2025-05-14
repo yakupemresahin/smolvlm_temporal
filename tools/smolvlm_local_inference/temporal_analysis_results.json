@@ -1,0 +1,98 @@
+[
+    {
+        "video_name": "apple_falling",
+        "fps": 3,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: No, the action in the video does not appear physically plausible and consistent with the normal flow of time."
+    },
+    {
+        "video_name": "apple_falling",
+        "fps": 8,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: No, the action in the video does not appear physically plausible and consistent with the normal flow of time."
+    },
+    {
+        "video_name": "apple_falling_rev",
+        "fps": 3,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: No, the action in the video does not appear physically plausible and consistent with the normal flow of time."
+    },
+    {
+        "video_name": "apple_falling_rev",
+        "fps": 8,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: No, the action in the video does not appear physically plausible and consistent with the normal flow of time. This is because the video shows a tree growing from a small sapling to a large tree in a very short amount of time. In real life, it takes many years for a tree to grow from a small sapling to a large tree. Additionally, the video shows the tree growing from a small sapling to a large tree in a very short amount of time, which is not consistent with"
+    },
+    {
+        "video_name": "door_closing",
+        "fps": 3,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: Yes, the action in the video appears physically plausible and consistent with the normal flow of time. This is because the action of opening the door is consistent with the normal flow of time, as it is a physical action that takes place over a period of time. Additionally, the action of closing the door is also consistent with the normal flow of time, as it is a physical action that takes place over a period of time. Therefore, the action of opening and closing the door is consistent with the normal"
+    },
+    {
+        "video_name": "door_closing",
+        "fps": 8,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: Yes, the action in the video appears physically plausible and consistent with the normal flow of time."
+    },
+    {
+        "video_name": "door_closing_rev",
+        "fps": 3,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: No, the action in the video does not appear physically plausible and consistent with the normal flow of time."
+    },
+    {
+        "video_name": "door_closing_rev",
+        "fps": 8,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: Yes, the action in the video appears physically plausible and consistent with the normal flow of time."
+    },
+    {
+        "video_name": "door_opening",
+        "fps": 3,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: Yes, the action appears physically plausible and consistent with the normal flow of time."
+    },
+    {
+        "video_name": "door_opening",
+        "fps": 8,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: Yes, the action in the video appears physically plausible and consistent with the normal flow of time."
+    },
+    {
+        "video_name": "door_opening_rev",
+        "fps": 3,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: Yes, the action in the video appears physically plausible and consistent with the normal flow of time. The girl is simply opening the door, which is a common action in everyday life. This action does not require any special physical abilities or magical powers."
+    },
+    {
+        "video_name": "door_opening_rev",
+        "fps": 8,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: Yes, the action in the video appears physically plausible and consistent with the normal flow of time."
+    },
+    {
+        "video_name": "glass_breaking",
+        "fps": 3,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: No, the action in the video does not appear physically plausible and consistent with the normal flow of time. This is because it is impossible for a glass of wine to shatter in such a way that the pieces fly away from the base of the glass. In reality, when a glass of wine shatters, the pieces fly away from the base of the glass due to the momentum of the wine and the force of the impact. However, in the video, the pieces fly away from the base of"
+    },
+    {
+        "video_name": "glass_breaking",
+        "fps": 8,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: No, the action in the video does not appear physically plausible and consistent with the normal flow of time. This is because it is impossible for a glass of wine to shatter into multiple pieces and then reform into a whole glass within the span of a few seconds. Additionally, the neon colors used in the image are not consistent with the natural colors of a glass of wine."
+    },
+    {
+        "video_name": "glass_breaking_rev",
+        "fps": 3,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: No, the action in the video does not appear physically plausible and consistent with the normal flow of time."
+    },
+    {
+        "video_name": "glass_breaking_rev",
+        "fps": 8,
+        "question": "Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why",
+        "response": "User: Answer briefly.<image>Assess whether the action in the video appears physically plausible and consistent with the normal flow of time. Explain why\nAssistant: Yes, the action in the video appears physically plausible and consistent with the normal flow of time."
+    }
+]
